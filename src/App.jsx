@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Navbar/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'
 import TransparentPricing from './components/TransparentPricing'
 
 
+
 const fetchProducts = async () => {
   const res = await fetch('/data.json');
   return res.json();
@@ -16,13 +17,15 @@ const fetchProducts = async () => {
 
 function App() {
   const productsPromise = fetchProducts();
-
+  const [carts, setCarts] = useState([]);
+  console.log(carts);
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
       <Rating></Rating>
-      <Suspense fallback={<span className="loading loading-bars loading-xl"></span>} ><Products productsPromise={productsPromise}></Products></Suspense>
+      <Suspense fallback={<span className="loading loading-bars loading-xl"></span>} ><Products productsPromise={productsPromise} carts={carts} setCarts={setCarts}></Products></Suspense>
+      
       <TransparentPricing></TransparentPricing>
       <Footer></Footer>
     </>

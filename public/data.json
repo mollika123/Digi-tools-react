@@ -8,7 +8,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["20+ templates", "Basic customization", "Export to PDF"],
-    "icon": "file-text"
+    "icon": "https://i.ibb.co/C5Y8NJwC/design-tool.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Cover letter builder"],
-    "icon": "briefcase"
+    "icon": "https://i.ibb.co/ksPQbx6S/operation.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Resume + cover letter", "LinkedIn optimization", "Priority support"],
-    "icon": "rocket"
+    "icon": "https://i.ibb.co/Ng5dJ2dY/portfolio.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Custom layouts", "Image galleries", "One-click publish"],
-    "icon": "layout"
+    "icon": "https://i.ibb.co/r2dzYLd1/social-media.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Mock questions", "AI feedback", "Answer templates"],
-    "icon": "message-circle"
+    "icon": "https://i.ibb.co/N2jVsMCP/writing-2327400-1.png"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Unlimited resumes", "Advanced analytics", "Personal career coach"],
-    "icon": "star"
+    "icon": "https://i.ibb.co/N2jVsMCP/writing-2327400-1.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Profile templates", "Gig descriptions", "SEO optimization"],
-    "icon": "user"
+    "icon": "https://i.ibb.co/r2RjZ0w2/rocket.png"
   },
   {
     "id": 8,
@@ -85,6 +85,6 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Executive templates", "Personal branding", "1-on-1 review"],
-    "icon": "award"
+    "icon": "https://i.ibb.co/39DQM0D0/user.png"
   }
 ]
