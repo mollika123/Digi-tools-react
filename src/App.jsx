@@ -8,6 +8,7 @@ import Rating from './components/Navbar/Rating/Rating'
 import Footer from './components/Footer/Footer'
 import TransparentPricing from './components/TransparentPricing'
 import StepsSection from './components/StepsSection'
+import ReadyTransform from './components/ReadyTransform'
 
 
 
@@ -20,14 +21,16 @@ function App() {
   const productsPromise = fetchProducts();
   const [carts, setCarts] = useState([]);
   
+  
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts}></Navbar>
       <Banner></Banner>
       <Rating></Rating>
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>} ><Products productsPromise={productsPromise} carts={carts} setCarts={setCarts}></Products></Suspense>
       <StepsSection></StepsSection>
       <TransparentPricing></TransparentPricing>
+      <ReadyTransform></ReadyTransform>
       <Footer></Footer>
     </>
   )

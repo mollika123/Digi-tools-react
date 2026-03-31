@@ -16,7 +16,7 @@ const Cart = ({ carts,setCarts}) => {
     toast.error('Product remove successfully')
   }
   return (
-    <div className=' w-11/12 mx-auto pt-20 pb-10'>
+    <div className=' w-11/12 mx-auto pt-20 pb-10 '>
       <h1 className='text-2xl font-bold'>Your Cart</h1>
       {carts.length===0?(<div className='w-11/12 mx-auto p-30 text-xl text-center'><img className='mx-auto w-[50px]' src={cartImg} alt="" /><p className='text-[#627382]'>Your cart is empty</p></div>):( carts.map(cart => <div key={cart.id}>
         < div className='p-10 shadow-2xl'>

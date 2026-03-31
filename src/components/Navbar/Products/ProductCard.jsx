@@ -6,6 +6,7 @@ const ProductCard = ({ product,carts,setCarts}) => {
   console.log(product);
   const [add, setAdd] = useState(false);
   const handleAddButton = () => {
+    
     setAdd(true);
     setCarts([...carts,product])
    toast.success('Product added to cart')
