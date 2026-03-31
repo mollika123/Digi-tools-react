@@ -3,13 +3,13 @@ import { FaCheck } from 'react-icons/fa'
 
 const TransparentPricing = () => {
     return (
-        <div className=' pb-10 md:pb-20'>
-            <div className='w-11/12 mx-auto px-5 md:px-0  '>
+        <div className='bg-gray-50 pb-10 md:pb-20'>
+            <div className='container mx-auto p-[20px] md:p-[20px] lg:px-[20px] xl:px-[0px]  '>
                 <div className='text-center mb-12'>
-                    <h2 className='text-3xl text-[#101727] font-bold mb-4'>
+                    <h2 className='text-3xl font-black mb-4'>
                         Simple, Transparent Pricing
                     </h2>
-                    <p className='text-xl font-bold text-[#627382] '>
+                    <p className='text-xl font-bold'>
                         Choose the plan that fits your needs. Upgrade or downgrade anytime.
                     </p>
                 </div>
@@ -26,15 +26,15 @@ const TransparentPricing = () => {
                             <span className='text-5xl font-black'>$0</span>
                             <span className='text-gray-500'>/Month</span>
                         </div>
-                        <ul className='space-y-3 flex-1 text-[#627382] '>
+                        <ul className='space-y-3 flex-1'>
                            
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' /> Access to 10 free tools</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' /> Access to 10 free tools</li>
 
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' /> Basic templates</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' /> Basic templates</li>
                             
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Community support</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Community support</li>
                             
-                              <li className="flex item-center gap-2"><FaCheck className='text-green-500' />1 project per month</li>
+                              <li className="flex item-center items-center gap-2"><FaCheck className='text-green-500' />1 project per month</li>
                       
                         </ul>
 
@@ -44,8 +44,8 @@ const TransparentPricing = () => {
                     </div>
 
                     
-                    <div className='relative bg-gradient-to-b from-violet-600 to-purple-500 rounded-2xl shadow-xl p-8 flex flex-col gap-4 text-white scale-105 my-[20px] '>
-                        <div className='absolute -top-4 left-1/2 -translate-x-1/2 z-10'>
+                    <div className='relative bg-gradient-to-b from-violet-600 to-purple-500 rounded-2xl shadow-xl p-8 flex flex-col gap-4 text-white  my-[20px] '>
+                        <div className='absolute -top-4 left-1/2 -translate-x-1/2'>
                             <span className='bg-yellow-300 text-yellow-900 text-xs font-bold px-4 py-1 rounded-full'>Most Popular</span>
                         </div>
                         <div>
@@ -59,17 +59,17 @@ const TransparentPricing = () => {
 
                         <ul className='space-y-3 flex-1'>
                            
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Access to all premium tools</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Access to all premium tools</li>
 
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' /> Unlimited templates</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' /> Unlimited templates</li>
                             
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Priority support</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Priority support</li>
                             
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Unlimited projects</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Unlimited projects</li>
                             
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Cloud sync</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Cloud sync</li>
 
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Advanced analytics</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Advanced analytics</li>
                       
                         </ul>
                         <button className='mt-4 w-full py-3 rounded-full bg-white text-violet-700 font-semibold'>
@@ -87,19 +87,19 @@ const TransparentPricing = () => {
                             <span className='text-5xl font-black'>$99</span>
                             <span className='text-gray-500'>/Month</span>
                         </div>
-                        <ul className='space-y-3 flex-1 text-[#627382] '>
+                        <ul className='space-y-3 flex-1'>
                            
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Everything in Pro</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Everything in Pro</li>
 
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Team collaboration</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Team collaboration</li>
                             
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Custom integrations</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Custom integrations</li>
                             
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Dedicated support</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Dedicated support</li>
                             
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />SLA guarantee</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />SLA guarantee</li>
 
-                            <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Custom branding</li>
+                            <li className="flex item-center gap-2 items-center "><FaCheck className='text-green-500' />Custom branding</li>
                       
                         </ul>
                         <button className='mt-4 w-full py-3 rounded-full bg-gradient-to-r from-violet-600 to-purple-500 text-white font-semibold'>

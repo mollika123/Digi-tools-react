@@ -1,37 +1,82 @@
-
 import { Suspense, useState } from 'react'
+
 import './App.css'
-import Banner from './components/Navbar/Banner/Banner'
-import Navbar from './components/Navbar/Navbar'
-import Products from './components/Navbar/Products/Products'
-import Rating from './components/Navbar/Rating/Rating'
-import Footer from './components/Footer/Footer'
-import TransparentPricing from './components/TransparentPricing'
-import StepsSection from './components/StepsSection'
-import ReadyTransform from './components/ReadyTransform'
+import Navbar from "./Navbar"
+import Banner from "./Banner"
+import StatsSection from "./StatsSection"
+import StepsSection from "./StepsSection"
+import ReadyTransform from "./ReadyTransform"
+import Footer from "./Footer"
+import TransparentPricing from "./TransparentPricing"
+import MainSection from "./MainSection"
+import Card from "./Card"
 
-
-
-const fetchProducts = async () => {
-  const res = await fetch('/data.json');
+const data=async () => {
+  const res=await fetch("data.json")
+  console.log(res)
   return res.json();
+  
 }
 
+const sentData=data()
+console.log( sentData )
+
 function App() {
-  const productsPromise = fetchProducts();
-  const [carts, setCarts] = useState([]);
+  const [count, setCount]=useState(0)
   
+  const [tab, setTab]=useState(true)
+  const [catchData, setCatchData]=useState([])
   
+  // console.log( catchData )
+
   return (
     <>
-      <Navbar carts={carts}></Navbar>
+      
+     
+        <Navbar cartCount={catchData.length}></Navbar>
+     
+
       <Banner></Banner>
-      <Rating></Rating>
-      <Suspense fallback={<span className="loading loading-bars loading-xl"></span>} ><Products productsPromise={productsPromise} carts={carts} setCarts={setCarts}></Products></Suspense>
+
+      <StatsSection></StatsSection>
+
+      <main>
+        <div className="py-[60px] md:py-[120px] p-[20px] md:p-[20px] lg:px-[20px] xl:px-[0px] ">
+          <div className="container">
+            <div className="text-center">
+              <h2 className="text-3xl font-black">Premium Digital Tools</h2>
+            <p className="text-xl font-bold my-4">Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
+            </div>
+            
+            <div className="flex flex-wrap gap-4 p-2 rounded-full justify-center items-center border border-gray-400 w-fit mx-auto 
+            ">
+
+              <button onClick={() => setTab(true)} className={` btn rounded-full ${tab===true? " bg-gradient-to-r from-violet-600 to-purple-500 text-white font-semibold":" "}`} > Products </button>
+              
+              <button onClick={() => setTab(false)} className={` btn rounded-full ${tab===false? " bg-gradient-to-r from-violet-600 to-purple-500 text-white font-semibold":" "}`} >Cart ({catchData.length})</button>
+            </div>
+
+           
+         {tab === true ? (<Suspense fallback={<span className="loading loading-spinner loading-xl ml-[50%] mt-[20%] "></span>}>
+        <MainSection sentData={sentData} catchData={catchData} setCatchData={setCatchData} ></MainSection>
+            </Suspense>):(
+                <Card catchData={catchData} setCatchData={setCatchData}></Card>
+            )}
+        
+        
+             </div>
+        </div>
+      </main>
+
       <StepsSection></StepsSection>
+
       <TransparentPricing></TransparentPricing>
+
       <ReadyTransform></ReadyTransform>
-      <Footer></Footer>
+      
+    <Footer></Footer>
+      <div className="ticks"></div>
+      <section id="spacer"></section>
     </>
   )
 }
