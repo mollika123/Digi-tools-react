@@ -18,8 +18,8 @@ const Products = ({ productsPromise,carts,setCarts}) => {
       {/* name of each tab group should be unique */}
 <div className="tabs justify-center mx-auto pt-20 tabs-box bg-transparent ">
  
-  <input onClick={()=>setActiveTab('products')} type="radio" name="my_tabs_1" className="tab rounded-full px-9 py-3" aria-label="Products" defaultChecked />
-        <input onClick={()=>setActiveTab('Cart')}type="radio" name="my_tabs_1" className="tab rounded-full px-9 py-3" aria-label="Cart" />
+  <input onClick={()=>setActiveTab('products')} type="radio" name="my_tabs_1" className={`tab rounded-full px-9 py-3 ${activeTab==='products'?'bg-linear-to-r from-[#4F39F6] to-[#9514FA]':""}`} aria-label="Products" defaultChecked />
+        <input onClick={()=>setActiveTab('Cart')}type="radio" name="my_tabs_1" className={`${activeTab==='products'?"":'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}  tab rounded-full px-9 py-3 `}aria-label={`Cart(${carts.length})`} />
       </div>
  
       {activeTab==='products'?(

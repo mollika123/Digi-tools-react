@@ -18,7 +18,7 @@ const fetchProducts = async () => {
 function App() {
   const productsPromise = fetchProducts();
   const [carts, setCarts] = useState([]);
-  console.log(carts);
+  
   return (
     <>
       <Navbar></Navbar>

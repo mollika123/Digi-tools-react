@@ -1,11 +1,19 @@
 import React from 'react';
 import cartImg from '../../../assets/assets/products/shopping-cart.png'
+import { toast } from 'react-toastify';
 const Cart = ({ carts,setCarts}) => {
   console.log(carts);
   const totalPrice = carts.reduce((sum, cart) => sum + cart.price, 0);
   
   const handlePayment = () => {
-    setCarts([])
+    setCarts([]);
+    toast.info('Payment successfull');
+  };
+
+  const handleRemove = (cart) => {
+    const filteredArray = carts.filter(item=>item.id !== cart.id);
+    setCarts(filteredArray);
+    toast.error('Product remove successfully')
   }
   return (
     <div className=' w-11/12 mx-auto pt-20 pb-10'>
@@ -21,7 +29,7 @@ const Cart = ({ carts,setCarts}) => {
             </div>
           </div>
           <div>
-            <button className='btn text-red-400'>Remove</button></div>
+            <button onClick={()=>handleRemove(cart)} className='btn text-red-400 rounded-full'>Remove</button></div>
     </div>
       </div>
       </div>))}
