@@ -29,7 +29,7 @@ A tab-based digital marketplace to browse, add, and purchase premium digital too
 
 5/ React Toastify
 
-6/ Lucide React
+6/  React icon
 
 # Features:
 

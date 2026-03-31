@@ -6,7 +6,7 @@ const TransparentPricing = () => {
         <div className=' pb-10 md:pb-20'>
             <div className='w-11/12 mx-auto px-5 md:px-0  '>
                 <div className='text-center mb-12'>
-                    <h2 className='text-3xl font-black mb-4'>
+                    <h2 className='text-3xl text-[#101727] font-bold mb-4'>
                         Simple, Transparent Pricing
                     </h2>
                     <p className='text-xl font-bold text-[#627382] '>
@@ -45,7 +45,7 @@ const TransparentPricing = () => {
 
                     
                     <div className='relative bg-gradient-to-b from-violet-600 to-purple-500 rounded-2xl shadow-xl p-8 flex flex-col gap-4 text-white scale-105 my-[20px] '>
-                        <div className='absolute -top-4 left-1/2 -translate-x-1/2'>
+                        <div className='absolute -top-4 left-1/2 -translate-x-1/2 z-10'>
                             <span className='bg-yellow-300 text-yellow-900 text-xs font-bold px-4 py-1 rounded-full'>Most Popular</span>
                         </div>
                         <div>

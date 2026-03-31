@@ -16,7 +16,7 @@ software—all in one place. Start creating faster today. <br />
 Explore Products
           </p>
           <button className='rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-5 py-3 mr-4'>Explore Products</button>
-          <button className="btn btn-outline btn-primary py-3 px-5 rounded-full"><CiPlay1></CiPlay1>
+          <button className="btn btn-outline btn-primary py-5.5 px-6 rounded-full"><CiPlay1></CiPlay1>
             Watch Demo</button>
         </div>
         <div>

@@ -5,7 +5,7 @@ const ReadyTransform = () => {
         <div className="bg-gradient-to-r from-violet-600 to-purple-500 py-20 md:py-30  ">
             <div className="container  px-5 md:px-0 text-center space-y-4">
                 <div className="">
-                    <h2 className="text-2xl font-black text-white">Ready to Transform Your Workflow?</h2>
+                    <h2 className="text-3xl font-bold text-white">Ready to Transform Your Workflow?</h2>
                 </div>
                 <div className="">
                     <p className="text-white font-semibold ">Join thousands of professionals who are already using Digitools to work smarter.Start your free trial today.</p>

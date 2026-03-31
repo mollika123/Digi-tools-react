@@ -9,7 +9,9 @@ const ProductCard = ({ product,carts,setCarts}) => {
     
     setAdd(true);
     setCarts([...carts,product])
-   toast.success('Product added to cart')
+    toast.success('Product added to cart');
+
+
   }
   return (
     <div className='p-5 shadow-2xl space-y-3'>
@@ -37,7 +39,7 @@ const ProductCard = ({ product,carts,setCarts}) => {
       <p className='flex items-center'><TiTick className='text-green-400'></TiTick>{product.features[0] }</p>
       <p className='flex items-center'><TiTick className='text-green-400'></TiTick>{product.features[1] }</p>
       <p className='flex items-center'><TiTick className='text-green-400'></TiTick>{product.features[2] }</p>
-      <button onClick={handleAddButton} className={`btn w-full  text-white rounded-full ${add ?"bg-green-500":"bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}>{add?"Added to Cart":'Buy Now'}</button>
+      <button type='button' onClick={handleAddButton} className={`btn w-full  text-white rounded-full ${add ?"bg-green-500":"bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}>{add?"Added to Cart":'Buy Now'}</button>
     </div>
   );
 };

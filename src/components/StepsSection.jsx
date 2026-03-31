@@ -8,7 +8,7 @@ const StepsSection = () => {
         <div className="">
         <div className="w-11/12 mx-auto  py-[60px]  md:py-[110px] px-[20px] md:px-[20px] lg:px-[20px] xl:px-[0px]">
             <div className='text-center'>
-                <h2 className="text-3xl font-black mb-4 ">Get Started in 3 Steps</h2>
+                <h2 className="text-3xl text-[#101727] font-bold mb-4 ">Get Started in 3 Steps</h2>
                 <p className="text-xl font-bold text-[#627382]">Start using premium digital tools in minutes, not hours.</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 '>
