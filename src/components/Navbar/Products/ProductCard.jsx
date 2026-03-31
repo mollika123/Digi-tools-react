@@ -12,9 +12,9 @@ const ProductCard = ({ product,carts,setCarts}) => {
   }
   return (
     <div className='p-5 shadow-2xl space-y-3'>
-      <div>
+      <div className='flex justify-end'>
         {product.tag && (
-          <div className={`px-4 py-1.5 text-right rounded-xl w-fit items-right px-4 py-1.5
+          <div className={`px-4 py-1.5 text-right rounded-xl w-fit items-right px-4 py-1.5 
             ${product.tag === 'best seller' ? ("bg-[#FEF3C6] text-[#BB4D00]") : ''}
             ${product.tag==='new'?('bg-[#DBFCE7] text-[#0A883E]'):''}
             ${product.tag==='popular'?('bg-[#E1E7FF] text-purple-600'):''}

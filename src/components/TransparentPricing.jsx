@@ -9,7 +9,7 @@ const TransparentPricing = () => {
                     <h2 className='text-3xl font-black mb-4'>
                         Simple, Transparent Pricing
                     </h2>
-                    <p className='text-xl font-bold'>
+                    <p className='text-xl font-bold text-[#627382] '>
                         Choose the plan that fits your needs. Upgrade or downgrade anytime.
                     </p>
                 </div>
@@ -26,7 +26,7 @@ const TransparentPricing = () => {
                             <span className='text-5xl font-black'>$0</span>
                             <span className='text-gray-500'>/Month</span>
                         </div>
-                        <ul className='space-y-3 flex-1'>
+                        <ul className='space-y-3 flex-1 text-[#627382] '>
                            
                             <li className="flex item-center gap-2"><FaCheck className='text-green-500' /> Access to 10 free tools</li>
 
@@ -87,7 +87,7 @@ const TransparentPricing = () => {
                             <span className='text-5xl font-black'>$99</span>
                             <span className='text-gray-500'>/Month</span>
                         </div>
-                        <ul className='space-y-3 flex-1'>
+                        <ul className='space-y-3 flex-1 text-[#627382] '>
                            
                             <li className="flex item-center gap-2"><FaCheck className='text-green-500' />Everything in Pro</li>
 

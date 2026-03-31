@@ -7,6 +7,7 @@ import Products from './components/Navbar/Products/Products'
 import Rating from './components/Navbar/Rating/Rating'
 import Footer from './components/Footer/Footer'
 import TransparentPricing from './components/TransparentPricing'
+import StepsSection from './components/StepsSection'
 
 
 
@@ -25,7 +26,7 @@ function App() {
       <Banner></Banner>
       <Rating></Rating>
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>} ><Products productsPromise={productsPromise} carts={carts} setCarts={setCarts}></Products></Suspense>
-      
+      <StepsSection></StepsSection>
       <TransparentPricing></TransparentPricing>
       <Footer></Footer>
     </>
